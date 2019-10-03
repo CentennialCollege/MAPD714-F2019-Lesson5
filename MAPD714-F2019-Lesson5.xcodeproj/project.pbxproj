@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		E9F5EF6823456B8500CD228B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F5EF6723456B8500CD228B /* AppDelegate.swift */; };
 		E9F5EF6A23456B8500CD228B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F5EF6923456B8500CD228B /* SceneDelegate.swift */; };
-		E9F5EF6C23456B8500CD228B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F5EF6B23456B8500CD228B /* ViewController.swift */; };
 		E9F5EF6F23456B8500CD228B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9F5EF6D23456B8500CD228B /* Main.storyboard */; };
 		E9F5EF7123456B8700CD228B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9F5EF7023456B8700CD228B /* Assets.xcassets */; };
 		E9F5EF7423456B8700CD228B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9F5EF7223456B8700CD228B /* LaunchScreen.storyboard */; };
+		E9F5EF7D23456E5F00CD228B /* SwitchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F5EF7C23456E5F00CD228B /* SwitchingViewController.swift */; };
+		E9F5EF7F234572F800CD228B /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F5EF7E234572F800CD228B /* BlueViewController.swift */; };
+		E9F5EF812345730800CD228B /* YellowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F5EF802345730800CD228B /* YellowViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E9F5EF6423456B8500CD228B /* MAPD714-F2019-Lesson5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MAPD714-F2019-Lesson5.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9F5EF6723456B8500CD228B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9F5EF6923456B8500CD228B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E9F5EF6B23456B8500CD228B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E9F5EF6E23456B8500CD228B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E9F5EF7023456B8700CD228B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9F5EF7323456B8700CD228B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9F5EF7523456B8700CD228B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9F5EF7C23456E5F00CD228B /* SwitchingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchingViewController.swift; sourceTree = "<group>"; };
+		E9F5EF7E234572F800CD228B /* BlueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
+		E9F5EF802345730800CD228B /* YellowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,7 @@
 		E9F5EF5B23456B8500CD228B = {
 			isa = PBXGroup;
 			children = (
+				E9F5EF7B23456CDE00CD228B /* ViewControllers */,
 				E9F5EF6623456B8500CD228B /* MAPD714-F2019-Lesson5 */,
 				E9F5EF6523456B8500CD228B /* Products */,
 			);
@@ -58,13 +63,22 @@
 			children = (
 				E9F5EF6723456B8500CD228B /* AppDelegate.swift */,
 				E9F5EF6923456B8500CD228B /* SceneDelegate.swift */,
-				E9F5EF6B23456B8500CD228B /* ViewController.swift */,
 				E9F5EF6D23456B8500CD228B /* Main.storyboard */,
 				E9F5EF7023456B8700CD228B /* Assets.xcassets */,
 				E9F5EF7223456B8700CD228B /* LaunchScreen.storyboard */,
 				E9F5EF7523456B8700CD228B /* Info.plist */,
 			);
 			path = "MAPD714-F2019-Lesson5";
+			sourceTree = "<group>";
+		};
+		E9F5EF7B23456CDE00CD228B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E9F5EF7C23456E5F00CD228B /* SwitchingViewController.swift */,
+				E9F5EF7E234572F800CD228B /* BlueViewController.swift */,
+				E9F5EF802345730800CD228B /* YellowViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +152,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9F5EF6C23456B8500CD228B /* ViewController.swift in Sources */,
 				E9F5EF6823456B8500CD228B /* AppDelegate.swift in Sources */,
 				E9F5EF6A23456B8500CD228B /* SceneDelegate.swift in Sources */,
+				E9F5EF7F234572F800CD228B /* BlueViewController.swift in Sources */,
+				E9F5EF7D23456E5F00CD228B /* SwitchingViewController.swift in Sources */,
+				E9F5EF812345730800CD228B /* YellowViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +310,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ca.centennialcollege.MAPD714-F2019-Lesson5";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,7 +328,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ca.centennialcollege.MAPD714-F2019-Lesson5";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
